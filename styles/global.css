@@ -1,0 +1,79 @@
+ /* limpando css */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* paddings sem aumentar o tam do elemento */
+    box-sizing: border-box;
+}
+
+/* criando variáveis */
+:root {
+    --off-white: #F6F1E9;
+    --off-white-opaque: rgba(246, 241, 233, 0.7);
+    --gray: #868686;
+    --orange: #EFA412;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width of the entire scrollbar */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* color of the tracking area */
+body::-webkit-scrollbar-track {
+    background: var(--off-white);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 2px solid var(--off-white);
+    /* creates padding around scroll thumb */
+}
+
+
+a, button, h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--gray);
+    font-size: 1.25rem;
+}
+
+/* 
+poppins 300, 500 e 800
+font-family: 'Poppins', sans-serif;
+
+roboto 300 e 700
+font-family: 'Roboto Condensed', sans-serif;
+*/
+ 
+ /* BOTAO PADRAO */
+ button {
+    padding: 12px 20px;
+    background-color: transparent;
+
+    transition: all 400ms;
+
+    color: var(--orange);
+    text-align: center;
+    font-weight: 500;
+
+    border-radius: 6px;
+    border: 2px solid var(--orange);
+}
+
+button:hover{
+    color: white;
+    background-color: var(--orange);
+}
+ 

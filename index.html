@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- importando fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Roboto+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav_bar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about_me.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="icon" type="imagex/svg" href="assets/smile.svg" />
+    <title>Laura Naomi Seto</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="assets/logo.svg" alt="Logo Laura Naomi" />
+
+            <div>
+                <div class="nav-link">
+                    <a href="#about-me">
+                        <span>1. </span>
+                        <span>SOBRE MIM<span>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a href="#projects">
+                        <span>2. </span>
+                        <span>PROJETOS</span>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a href="#contact">
+                        <span>3. </span>
+                        <span>CONTATO</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="hero">
+        <div>
+            <div>
+                Olá, eu sou a
+                <h1>Laura Naomi</h1>
+                e esse é o meu <span>portfólio</span> <strong><em>site</em></strong> !
+            </div>
+
+            <p>
+                Criei esta página para aprender um pouco de <strong>desenvolvimento web</strong> e suas tecnologias fundamentais.
+            </p>
+
+            <a href="#about-me">
+                <button>Sobre mim</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <div>
+            <h1>
+                <span>01. </span>
+                <span>SOBRE MIM</span>
+            </h1>
+
+            <p>
+                Olá, me chamo Laura e sou estudante de <strong>Ciência da Computação</strong> na Universidade Federal de
+                São Carlos (UFSCar) no câmpus de Sorocaba.
+                <br /><br />
+                Atualmente, sou membro efetivo da <strong>Beets Jr.</strong>, empresa júnior da universidade, atuando na
+                área de Projetos como desenvolvedora front-end e aspirante a Scrum Master e Product Owner.
+            </p>
+        </div>
+        <img src="./assets/my-photo.svg" alt="Foto de Laura Naomi Seto" />
+
+        <h2>EXPERIÊNCIAS</h2>
+        <div id="xp">
+            <div>
+                <div class="xp-link" onclick="showCard(0)">Beets Jr.</div>
+                <div class="xp-link" onclick="showCard(1)">UFSCar</div>
+                <div class="xp-link" onclick="showCard(2)">Fábrica de Software</div>
+                <div class="xp-link" onclick="showCard(3)">IFSP</div>
+            </div>
+
+            <div>
+                <div class="card-xp">
+                    <h3><span>Membro de projetos</span> <span><a href="https://www.beetsjr.com.br/"
+                                target="_blank">@Beets Jr.</a></span></h3>
+                    <div><span>Outubro de 2022</span> ~ <span>Presente</span></div>
+
+                    <p>
+                        Sou membro efetivo da área de Projetos na empresa júnior Beets Jr. formada por alunos da UFSCar Sorocaba, que oferece soluções web para a comunidade. Atuo como desenvolvedora, trabalhando com tecnologias básicas como HTML, CSS e JavaScript, ferramentas como Figma, Git e GitHub e
+                        metodologia Scrum.
+                    </p>
+                </div>
+
+                <div class="card-xp">
+                    <h3><span>Aluna</span> <span><a href="https://www.sorocaba.ufscar.br/" target="_blank">@UFSCar
+                                Sorocaba</a></span></h3>
+                    <div><span>Maio de 2022</span> ~ <span>Presente</span></div>
+
+                    <p>
+                        Sou aluna do curso de Ciência da Computação pela UFSCar Sorocaba.
+                        Até o presente momento (meio do terceiro semestre), o curso teve foco em estrutura de dados em C e orientação a objeto em Java.
+                    </p>
+                </div>
+
+                <div class="card-xp">
+                    <h3><span>Bolsista</span> <span><a href="https://fabsoftware.itp.ifsp.edu.br/"
+                                target="_blank">@Fábrica de Software</a></span></h3>
+                    <div><span>Abril de 2021</span> ~ <span>Agosto de 2021</span></div>
+
+                    <p>
+                        Ainda que breve, minha participação como bolsista no projeto de extensão Fábrica de Softwares do IFSP de Itapetininga, cujo objetivo era oferecer experiência similar ao mercado de
+                        desenvolvimento web para os alunos, me proporcionou uma introdução às metodologias ágeis e ao gerenciamento de projetos com o Scrum. Ademais, me deparei com frameworks como o Laravel e o React pela primeira vez.</p>
+                </div>
+
+                <div class="card-xp">
+                    <h3><span>Aluna</span> <span><a href="https://itp.ifsp.edu.br/" target="_blank">@IFSP
+                                Itapetininga</a></span></h3>
+                    <div><span>Fevereiro de 2018</span> ~ <span>Dezembro de 2021</span></div>
+
+                    <p>
+                        Durante o ensino médio integrado ao curso técnico de informática, tive o primeiro contato com computação. Fui apresentada a tecnologias como HTML, CSS, MySQL, Git, GitHub, PHP, Java e Python.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var index = 0;
+            showCard(index);
+
+            function showCard(n) {
+                var i;
+                var cards = document.getElementsByClassName("card-xp");
+                var links = document.getElementsByClassName("xp-link");
+
+                for (i = 0; i < cards.length; i++) {
+                    links[i].classList.remove('xp-link-on');
+                    cards[i].style.display = "none";
+                }
+
+                links[n].classList.add('xp-link-on');
+                cards[n].style.display = "block";
+            }
+        </script>
+
+    </section>
+
+
+    <section id="projects">
+        <div>
+            <h1>
+                <span>02. </span>
+                <span>PROJETOS</span>
+            </h1>
+
+            <div>
+                <div class="card-proj">
+                    <img src="./assets/folder-icon.svg" alt="Ícone de pasta" />
+                    <h2>Café</h2>
+                    <p>Projeto elaborado para a validação da capacitação de HTML e CSS promovido pela Beets Jr.</p>
+
+                    <div>
+                        <a href="">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.359 21.5403V18.5967C15.3975 18.1077 15.3314 17.616 15.1651 17.1545C14.9989 16.6929 14.7363 16.272 14.3949 15.9198C17.6154 15.5608 21 14.3403 21 8.7403C20.9997 7.30833 20.4489 5.93128 19.4616 4.89415C19.929 3.64134 19.896 2.25656 19.3692 1.02748C19.3692 1.02748 18.159 0.668506 15.359 2.54543C13.0082 1.90832 10.5303 1.90832 8.1795 2.54543C5.3795 0.668506 4.16924 1.02748 4.16924 1.02748C3.64244 2.25656 3.60938 3.64134 4.07693 4.89415C3.08218 5.93897 2.5308 7.32848 2.53847 8.77107C2.53847 14.3301 5.92307 15.5506 9.14359 15.9506C8.80615 16.2993 8.54592 16.7151 8.3798 17.171C8.2137 17.6269 8.14544 18.1127 8.1795 18.5967V21.5403"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.17949 19.4888C5.10256 20.4869 2.53846 19.4888 1 16.4119" stroke="#868686"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 1H14.3333M21 1L11 11M21 1V7.66666" stroke="#868686" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M21 12.1111V18.7778C21 20.0051 20.0051 21 18.7778 21H3.22222C1.99492 21 1 20.0051 1 18.7778V3.22222C1 1.99492 1.99492 1 3.22222 1H9.88888"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-proj">
+                    <img src="./assets/folder-icon.svg" alt="Ícone de pasta" />
+                    <h2>Calculadora</h2>
+                    <p>Projeto elaborado para a validação da capacitação de JavaScript promovido pela Beets Jr.</p>
+
+                    <div>
+                        <a href="">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.359 21.5403V18.5967C15.3975 18.1077 15.3314 17.616 15.1651 17.1545C14.9989 16.6929 14.7363 16.272 14.3949 15.9198C17.6154 15.5608 21 14.3403 21 8.7403C20.9997 7.30833 20.4489 5.93128 19.4616 4.89415C19.929 3.64134 19.896 2.25656 19.3692 1.02748C19.3692 1.02748 18.159 0.668506 15.359 2.54543C13.0082 1.90832 10.5303 1.90832 8.1795 2.54543C5.3795 0.668506 4.16924 1.02748 4.16924 1.02748C3.64244 2.25656 3.60938 3.64134 4.07693 4.89415C3.08218 5.93897 2.5308 7.32848 2.53847 8.77107C2.53847 14.3301 5.92307 15.5506 9.14359 15.9506C8.80615 16.2993 8.54592 16.7151 8.3798 17.171C8.2137 17.6269 8.14544 18.1127 8.1795 18.5967V21.5403"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.17949 19.4888C5.10256 20.4869 2.53846 19.4888 1 16.4119" stroke="#868686"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 1H14.3333M21 1L11 11M21 1V7.66666" stroke="#868686" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M21 12.1111V18.7778C21 20.0051 20.0051 21 18.7778 21H3.22222C1.99492 21 1 20.0051 1 18.7778V3.22222C1 1.99492 1.99492 1 3.22222 1H9.88888"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-proj">
+                    <img src="./assets/folder-icon.svg" alt="Ícone de pasta" />
+                    <h2>Paciência</h2>
+                    <p>Projeto em grupo elaborado para avaliação na disciplina de Estrutura de Dados em C.</p>
+
+                    <div>
+                        <a href="">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.359 21.5403V18.5967C15.3975 18.1077 15.3314 17.616 15.1651 17.1545C14.9989 16.6929 14.7363 16.272 14.3949 15.9198C17.6154 15.5608 21 14.3403 21 8.7403C20.9997 7.30833 20.4489 5.93128 19.4616 4.89415C19.929 3.64134 19.896 2.25656 19.3692 1.02748C19.3692 1.02748 18.159 0.668506 15.359 2.54543C13.0082 1.90832 10.5303 1.90832 8.1795 2.54543C5.3795 0.668506 4.16924 1.02748 4.16924 1.02748C3.64244 2.25656 3.60938 3.64134 4.07693 4.89415C3.08218 5.93897 2.5308 7.32848 2.53847 8.77107C2.53847 14.3301 5.92307 15.5506 9.14359 15.9506C8.80615 16.2993 8.54592 16.7151 8.3798 17.171C8.2137 17.6269 8.14544 18.1127 8.1795 18.5967V21.5403"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.17949 19.4888C5.10256 20.4869 2.53846 19.4888 1 16.4119" stroke="#868686"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 1H14.3333M21 1L11 11M21 1V7.66666" stroke="#868686" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M21 12.1111V18.7778C21 20.0051 20.0051 21 18.7778 21H3.22222C1.99492 21 1 20.0051 1 18.7778V3.22222C1 1.99492 1.99492 1 3.22222 1H9.88888"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-proj">
+                    <img src="./assets/folder-icon.svg" alt="Ícone de pasta" />
+                    <h2>WebLoja</h2>
+                    <p>Web loja elaborado para a avaliação na disciplina Web II no curso técnico de informática.</p>
+
+                    <div>
+                        <a href="">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.359 21.5403V18.5967C15.3975 18.1077 15.3314 17.616 15.1651 17.1545C14.9989 16.6929 14.7363 16.272 14.3949 15.9198C17.6154 15.5608 21 14.3403 21 8.7403C20.9997 7.30833 20.4489 5.93128 19.4616 4.89415C19.929 3.64134 19.896 2.25656 19.3692 1.02748C19.3692 1.02748 18.159 0.668506 15.359 2.54543C13.0082 1.90832 10.5303 1.90832 8.1795 2.54543C5.3795 0.668506 4.16924 1.02748 4.16924 1.02748C3.64244 2.25656 3.60938 3.64134 4.07693 4.89415C3.08218 5.93897 2.5308 7.32848 2.53847 8.77107C2.53847 14.3301 5.92307 15.5506 9.14359 15.9506C8.80615 16.2993 8.54592 16.7151 8.3798 17.171C8.2137 17.6269 8.14544 18.1127 8.1795 18.5967V21.5403"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.17949 19.4888C5.10256 20.4869 2.53846 19.4888 1 16.4119" stroke="#868686"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 1H14.3333M21 1L11 11M21 1V7.66666" stroke="#868686" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M21 12.1111V18.7778C21 20.0051 20.0051 21 18.7778 21H3.22222C1.99492 21 1 20.0051 1 18.7778V3.22222C1 1.99492 1.99492 1 3.22222 1H9.88888"
+                                    stroke="#868686" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/lauranaomiseto/">
+                <button>Ver mais</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div>
+            <h1>
+                <span>03. </span>
+                <span>CONTATO</span>
+            </h1>
+
+            <p>
+                Ainda não estou preparada para embarcar em projetos formais/profissionais, mas <strong>adoro conversar</strong>! Minha caixa de entrada está aberta para compartilhar experiências
+                <strong>:&#41;</strong>
+            </p>
+
+            <a href="mailto: lauranaomiseto@gmail.com">
+                <button>Mandar email</button>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/laura-naomi-seto/">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.57143 0C2.62423 0 1.71582 0.376274 1.04605 1.04605C0.376274 1.71582 0 2.62423 0 3.57143V21.4286C0 22.3758 0.376274 23.2842 1.04605 23.954C1.71582 24.6237 2.62423 25 3.57143 25H21.4286C22.3758 25 23.2842 24.6237 23.954 23.954C24.6237 23.2842 25 22.3758 25 21.4286V3.57143C25 2.62423 24.6237 1.71582 23.954 1.04605C23.2842 0.376274 22.3758 0 21.4286 0H3.57143ZM5.53929 7.67321C6.10524 7.67321 6.64801 7.44839 7.0482 7.0482C7.44839 6.64801 7.67321 6.10524 7.67321 5.53929C7.67321 4.97333 7.44839 4.43056 7.0482 4.03037C6.64801 3.63018 6.10524 3.40536 5.53929 3.40536C4.97333 3.40536 4.43056 3.63018 4.03037 4.03037C3.63018 4.43056 3.40536 4.97333 3.40536 5.53929C3.40536 6.10524 3.63018 6.64801 4.03037 7.0482C4.43056 7.44839 4.97333 7.67321 5.53929 7.67321ZM7.325 21.0946V9.34643H3.75357V21.0946H7.325ZM9.69643 9.34643H13.2679V10.9196C13.7946 10.0946 14.9518 8.98393 17.1036 8.98393C19.6714 8.98393 21.0661 10.6857 21.0661 13.9232C21.0661 14.0786 21.0804 14.7875 21.0804 14.7875V21.0929H17.5089V14.7893C17.5089 13.9232 17.3268 12.2214 15.4018 12.2214C13.475 12.2214 13.3125 14.3607 13.2679 15.7607V21.0929H9.69643V9.34643Z"
+                    fill="#868686" />
+            </svg>
+        </a>
+
+
+        <div>
+            <span>Projetado e desenvolvido com carinho, por </span>
+            <img src="assets/logo.svg" alt="Logo Laura Naomi" />
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

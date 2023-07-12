@@ -1,0 +1,56 @@
+#hero {
+    background-color: var(--off-white);
+}
+
+/* #hero > HeroContent */
+#hero > div{
+    height: 100vh;
+    
+    padding-left: 15%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* #hero > HeroContent > HeroTitle */
+#hero > div > div { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    width: 45%;
+    min-width: 360px;
+
+    margin-bottom: 30px;
+}
+
+/* #hero > HeroContent > HeroTitle > h1*/
+#hero > div > div > h1{
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url("../../assets/doodle.svg");
+    width: 549px;
+    height: 141px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* #hero > HeroContent > HeroTitle > span */
+#hero > div > div > span {
+    text-decoration: line-through;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 4px;
+}
+
+/* #hero > HeroContent > p */
+#hero > div > p {
+    font-size: 1.25rem;
+
+    width: 45%;
+    min-width: 360px; 
+
+    margin-bottom: 30px;
+}
